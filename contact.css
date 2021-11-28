@@ -1,0 +1,115 @@
+body{
+  background-color: #ACB95C;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+
+#headerul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(149, 163, 122);
+
+}
+
+#headerli {
+  float: left;
+}
+#headerli1 {
+  float: left;
+}
+
+#link1 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#link2 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#link1:hover {
+  background-color: #111;
+}
+#link2:hover {
+  background-color: #111;
+}
+
+h1{
+  font-family: serif;
+  font-weigth: bold;
+  text-align: center;
+  
+}
+
+h2{
+  font-family: serif;
+  font-weigth: bold;
+  text-align: center;
+  
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+.bar{
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.link{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.link:hover{
+  background-color: #111;
+}
+
+
+
+
+
+
+@media only screen
+  and (min-device-width: 813px){
+
+
+  }
+
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (orientation: portrait){
+
+  }
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (orientation: landscape) {
+
+ 
+
+}

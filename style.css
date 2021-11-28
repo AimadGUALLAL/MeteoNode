@@ -1,0 +1,310 @@
+
+@media only screen
+  and (min-device-width: 813px){
+
+.boxed {
+  display: block;
+  background: #eaeaea;
+  padding: 3em;
+  border-radius: 100px;
+  right: 100%; 
+  margin: 0 auto;
+  width: 800px; 
+}
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+body {overflow-x: hidden;
+	background: linear-gradient(-45deg, #52eeba, #b6be3f, #8daab4, #4f726a);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: lightgrey; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+} 
+
+ 
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #8099a5;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s
+}
+ 
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+ 
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weigth: bold;
+  text-align: center;
+  
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weigth: bold;
+  text-align: center;
+  
+}
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+p{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+dl{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+  }
+
+
+
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (orientation: portrait){
+body{
+  background-color: red;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weigth: bold;
+  text-align: center;
+  
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weigth: bold;
+  text-align: center;
+  
+}
+.center {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+p{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+dl{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+  }
+
+
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (orientation: landscape) {
+
+body{
+  background-color: red;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weigth: bold;
+  text-align: center;
+  
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weigth: bold;
+  text-align: center;
+  
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li a:hover {
+  background-color: #111;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+p{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+dl{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 6px;
+}
+
+#UnitVit{
+   position: absolute;
+   right: 20px;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+
+<div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configuration</title>
+    <link href="styleconfig.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js">
+
+	</script>
+
+  </head>
+  <body>
+
+<header>
+  <ul class="bar" id="headerul">
+ <li id="headerli"> <a id="link1" href="index.html" class="link">Accueil</a></li>
+    <li id="headerli1">  <a id="link2" href="contact.html" class="link">Contact</a></li>
+    </ul>
+		<h1>Configuration de l'application méteo</h1>
+	</header>
+<section>
+<h3>Choisir une ville pour l'afficher</h3>
+<form action="/set" method="get">
+
+
+<ul>
+
+
+
+            <label class="container">Gif-sur-Yvette
+        <input type="checkbox" name ="gif">
+        <span class="checkmark"></span>
+      </label>
+
+            <label class="container">Orsay
+        <input type="checkbox" name ="orsay">
+        <span class="checkmark"></span>
+      </label>
+
+                <label class="container">Palaiseau 
+        <input type="checkbox" name ="palaiseau">
+        <span class="checkmark"></span>
+      </label>
+
+
+                <label class="container">Paris
+        <input type="checkbox" name="paris">
+        <span class="checkmark"></span>
+      </label>    
+
+</ul>
+
+
+ <li> Ou tapez une ville francaise <input type="text" name="ville"  > </li>	 
+
+<!--
+ <div class="form__group field">
+  <input type="input" class="form__field" placeholder="Ville" name="ville" id='ville' required />
+  <label for="ville" class="form__label">Choisir une autre ville</label>
+</div>
+-->
+<h3>Ou bien choisir une ville depuis la carte pour l'afficher</h3>
+<div id="map"></div>
+
+
+
+
+
+
+
+
+  </section>
+
+  
+
+<section>
+<div id="UnitVit" > <h3>Choisir l'unité de vitesse</h3></div>
+
+<ul> 
+<!--
+
+<li>Metre par seconde <input type="checkbox" name="ms"> </li>
+
+<li> Kilomètre par heure <input type="checkbox" name="kmh"> </li>	 
+
+-->
+
+ <label class="container">Mètre par seconde
+        <input type="checkbox"  name ="ms">
+        <span class="checkmark"></span>
+      </label>
+
+            <label class="container">Kilomètre par heure
+        <input type="checkbox" name ="kmh">
+        <span class="checkmark"></span>
+      </label>
+	
+
+</ul>
+
+  </section> 
+
+
+<section>
+<h3>Choisir l'unité de température</h3>
+
+<ul>
+<!--
+<li>C <input type="checkbox" name="celsius"> </li>
+<li> F <input type="checkbox" name="fahrneit"> </li>	 
+<li> K <input type="checkbox" name="kelvin"> </li>
+-->
+
+ <label class="container">C
+        <input type="checkbox"  name ="celsius">
+        <span class="checkmark"></span>
+      </label>
+
+            <label class="container">F
+        <input type="checkbox" name ="fahrneit">
+        <span class="checkmark"></span>
+      </label>
+
+       <label class="container">K
+        <input type="checkbox"  name ="kelvin">
+        <span class="checkmark"></span>
+      </label>
+
+
+	
+</ul>
+
+  </section>
+
+  <section>
+<h3>Cacher ces informations</h3>
+<!--
+<ul>
+<li>Température<input type="checkbox" name="tempc"> </li>
+<li> Visibilité <input type="checkbox" name="visc"> </li>	 
+<li> Vitesse du vent <input type="checkbox" name="vitc"> </li>	 
+<li> Couverture du nuage <input type="checkbox" name="couvc"> </li>	 
+-->
+
+ <label class="container">Température
+        <input type="checkbox"  name ="tempc">
+        <span class="checkmark"></span>
+      </label>
+       <label class="container">Visibilité
+        <input type="checkbox"  name ="visc">
+        <span class="checkmark"></span>
+      </label>
+       <label class="container">Vitesse du vent
+        <input type="checkbox"  name ="vitc">
+        <span class="checkmark"></span>
+      </label>
+       <label class="container">Couverture du nuage
+        <input type="checkbox"  name ="couvc">
+        <span class="checkmark"></span>
+      </label>
+	
+  <h3>Date:</h3>
+    <label class="container">Aujourd'hui
+    <input type="checkbox" id ="Aujourd'hui" name="Date" value="Aujourd'hui"><span class="checkmark"></span></label>
+    <label class="container">Demain
+    <input type="checkbox" id="Demain" name="Date" value="Demain"> 
+    <span class="checkmark"></span></label>
+    <label class="container">Dans 2 jours
+    <input type="checkbox" id="2jours" name="Date" value="2jours"> 
+    <span class="checkmark"></span></label>
+</ul>
+  </section>
+<input type="submit" value="Submit">
+</form>
+
+
+
+
+<script src="script.js"></script>
+
+
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB19EfKZ72J2aq_Geq-jhK8cPHX-8UL_jU&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+   </body> 
+
+
+ </html>  

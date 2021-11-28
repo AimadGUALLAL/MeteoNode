@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+
+<div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+<div id="sideNavigation" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="configuration.html">Configuration</a>
+  <a href="contact.html">Contact</a>
+</div>
+ 
+<nav class="topnav">
+  <a href="#" onclick="openNav()">
+    <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+    </svg>
+  </a>
+</nav>
+ 
+<div id="main">
+<!-- Add all your websites page content here  -->
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application Meteo</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js">
+
+	</script>
+  
+<script>
+function openNav() {
+    document.getElementById("sideNavigation").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+  </head>
+  <body>
+
+    <header>
+		
+	</header>
+  <h1><span id="ville">Gif-Sur-Yvette</span></h1>
+
+
+  
+
+
+    <section>
+    <h2>Description de la ville</h2>
+    <div class="boxed" id="descriptionville">
+    </div>     
+    </section>
+
+  
+
+  <section>
+    <h2>Carte</h2>
+    <div class="container">
+    <div id="uneJoliCarte" style="height:500px; width:500px;" ></div>
+    </div>
+  </section>
+
+  
+
+
+<!--
+<div class="boxed" id="descriptionville">
+<section>
+<h2>Description de la ville</h2>
+
+
+<p id="descriptionville"> </p>  
+  
+</section>
+</div>
+<br>
+  <section>
+    <h2>Carte</h2>
+    <div class="container">
+    <div id="uneJoliCarte" style="height:500px; width:500px;" ></div>
+    </div>
+
+  </section>
+  -->
+
+
+<section>
+  <h2> Infomations météo</h2>
+  <img id="icon"  width="50" height="60">
+  
+  <div class="wrapper">
+      <div ></div>
+		  <div class="Ajd jour">Ajd</div>
+		  <div class="Demain jour">Demain</div>
+		  <div class="2jours jour">Dans 2 jours</div>
+
+		  <div class="contenant tempTab" id="temp">Temperature</div>
+		  <div id="vtemp" class="tempTab Ajd"><span class="contenu tempTab Ajd"> 12 </span>  <span class="unite tempTab Ajd"> degrés </span></div>
+		  <div class="tempTab Demain"><span class="contenu tempTab Demain"> 15 </span>  <span class="unite tempTab Demain"> degrés </span></div>
+		  <div class="tempTab 2jours"><span class="contenu tempTab 2jours"> 18 </span>  <span class="unite tempTab 2jours"> degrés </span></div>
+
+		  <div class="contenant couvTab" id="couv">Couverture nuageuse</div>
+      <div id="vcouv" class="couvTab Ajd"><span class="contenu Ajd couvTab"> gris foncé </span></div>
+		  <div class="couvTab"><span class="contenu Demain couvTab"> gris clair </span></div>
+		  <div class="couvTab"><span class="contenu 2jours couvTab"> soleil </span></div>
+
+      <div class="contenant ventTab" id="vent">Vitesse du vent</div>
+      <div id="vvent" class="ventTab"><span class="contenu Ajd ventTab"> 40 </span> <span class="unite Ajd ventTab"> km/h  </span></div>
+		  <div class="ventTab"><span class="contenu Demain ventTab"> 40 </span> <span class="unite Demain ventTab"> km/h  </span></div>
+		  <div class="ventTab"><span class="contenu 2jours ventTab"> 40 </span> <span class="unite 2jours ventTab"> km/h  </span></div>
+
+      <div class="contenant visTab" id="vis">Visibilitée</div>
+		  <div class="visTab"><span class="contenu visTab Ajd">5</span><span class="unite visTab Ajd"> mètres</span></div>
+		  <div "visTab"><span class="contenu visTab Demain">8</span><span class="unite visTab Demain"> mètres</span></div>
+		  <div "visTab"><span class="contenu visTab 2jours">11</span><span class="unite visTab 2jours"> mètres</span></div>
+      
+</div>
+
+</section>
+
+
+
+</body>
+
+
+<script src="script.js"></script>
+</div> 
+
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<meteo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="monFichier.xsd">
+  <vent>80</vent>
+  <pression>1000</pression>
+  <temp>60</temp>
+  <nuage visibilite="100">
+    <description>soleil</description>
+  </nuage>
+</meteo>
