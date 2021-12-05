@@ -24,7 +24,7 @@ A configuration page where the user can play with the parameters:
    
 A contact page.
 
-Our website was obviously created using the HTML, CSS, JavaScript and Nodejs frame work that I handled well during the course.
+The website was obviously created using the HTML, CSS, JavaScript and Nodejs frame work that I handled well during the course.
 To mobilize additional options to the Weather application, I used other services, namely Geocoding API and Google Maps Api. 
 These two services would allow us to integrate Google Maps into our application and quickly choose the city on the map with a simple click to view the corresponding information. 
 I also deployed the weather forecast using Open Weather.
